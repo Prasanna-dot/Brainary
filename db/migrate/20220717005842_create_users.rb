@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :password_digest
       t.integer :batch
       t.binary :profile_pic
+      t.bigint :role_id
 
       t.timestamps
     end
